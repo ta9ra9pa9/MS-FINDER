@@ -14,15 +14,15 @@ When a domain doesn't have Office365, this robust script filters it out and look
 
 ### How it's Work
 
-```flow
-st=>start: You!
-op=>operation: My Server API
-cond=>condition: Exchange Requests
-e=>end: Save Result
+``` flow
+st=> start: You!
+op=> operation: My Server API
+cond=> condition: Exchange Requests
+e=> end: Save Result
 
-st->op->cond
-cond(yes)->e
-cond(no)->op
+st-> op-> cond
+cond(yes)-> e
+cond(no)-> op
 ```
 
 ##### Best
