@@ -12,5 +12,7 @@ When a domain doesn't have Office365, this robust script filters it out and look
 ### Requirements
 > Python 3 { Working on All Operation systems }
 
+#### Youtube Video : https://www.youtube.com/watch?v=LuAykob0chs&t=51s&ab_channel=Pythonscriptsforautomation
+#### Contact : https://t.me/datanumbersunlimited
 ##### Best
 ##### Hacking Tools - 0day
