@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 import os , time , json , platform
@@ -126,7 +126,7 @@ def make_dirs():
 def Action( combo ):
 	
 	def save_as( inputs  , saveAs , saveString ):
-		with open( saveAs , "a" ) as ff:
+		with open( saveAs , "a", encoding="utf-8" , errors="ignore"  ) as ff:
 			ff.write( "%s\n" % saveString )
 		print( inputs )
 
